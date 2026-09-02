@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoCosmos</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="min-h-screen bg-violet-50 flex flex-col sm:px-4 md:px-16 xl:px-24 p-6">
+    <header class="flex flex-col justify-center items-center bg-zinc-300/50 p-4">
+        <h1 class="font-mono font-bold text-2xl">Proyecto<span class="font-serif italic text-lg">Cosmos</span></h1>
+        <p class="font-serif italic text-lg">El Universo a un clic de distancia</p>
+    </header>
+    <!-- flex-1 w-full max-w-7xl mx-auto 
+               sm:text-base md:text-lg lg:text-xl-->
+    <main class="grid grid-flow-col grid-rows-2 gap-4 w-full max-w-7xl mx-auto 
+               sm:text-base md:text-lg lg:text-xl">
+        <section id="nasa-section" class="m-4 col-span-2">
+            <h2 class="">NASA</h2>
+            <div id="nasa-content"></div>
+        </section>
+        <section id="esa-section" class="m-4 col-span-2">
+            <h2 class="">ESA</h2>
+            <div id="esa-content"></div>
+        </section>
+        <section id="mixed-section" class="m-4 col-span-2">
+            <h2 class="">Misceláneo</h2>
+            <div id="mixed-content"></div>
+        </section>
+        <aside id="amusement" class="m-4 row-span-3">
+            <h2>Entretenimiento</h2>
+            <div id="amusement-content"></div>
+        </aside>
+        <!-- contenido -->
+    </main>
+    <footer class="w-full bg-zinc-300/50 p-4 mt-6 text-center ">
+        © 2026 ProyectoCosmos | Todos los derechos reservados
+    </footer>
+</body>
+
+</html>
