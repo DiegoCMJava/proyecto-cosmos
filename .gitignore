@@ -1,0 +1,36 @@
+# Configuración de editores
+.vscode/
+.idea/
+
+# Dependencias (próximamente npm/yarn/pnpm)
+node_modules/
+
+# Archivos de build y distribución (próximamente)
+dist/
+build/
+out/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs y temporales
+*.log
+*.tmp
+
+# Variables de entorno(próximamente)
+.env
+.env.local
+.env.*.local
+
+# Cachés de frameworks y herramientas(próximamente)
+.cache/
+.next/
+.nuxt/
+.svelte-kit/
+.angular/
+.vercel/
+.netlify/
+
+# Coverage y pruebas (próximamente)
+coverage/ 
