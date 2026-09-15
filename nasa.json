@@ -1,7 +1,7 @@
 [
     {
         "title": "ProyectoInti",
-        "description": "Las llamaradas solares son eventos que repercuten directamente en la Tierra, saber sobre ellas nos puede ayudar a predecir sus efectos. En esta web veremos información que nos facilita la NASA por medio de sus apis públicas sobre el comportamiento de dichas llamaradas.",
+        "description": "Explora las llamaradas solares.",
         "url": "https://diegocmjava.github.io/proyecto-inti/",
         "imgurl": "https://i.ibb.co/KpCHqmFb/img-proyecto-inti.png"
     },
