@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap');
+
+:root {
+    --brand-blue: #4A90E2;
+    --brand-yellow: #F5C518;
+    --brand-green: #50E3C2;
+    --brand-orange: #FF6F61;
+    --bg-soft-white: #FAFAFA;
+    --border-light-gray: #E0E0E0;
+    --text-dark: #2C3E50;
+    --text-muted: #5A6B7C;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', 'Quicksand', sans-serif;
+    background-color: var(--bg-soft-white);
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .font-heading {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Ocultar barra de desplazamiento manteniendo el scroll funcional */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Fondo Blanco Suave con detalles limpios */
+.cosmos-bg {
+    background-color: #FAFAFA;
+    background-image: 
+        radial-gradient(circle at 10% 15%, rgba(74, 144, 226, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 90% 25%, rgba(245, 197, 24, 0.08) 0%, transparent 45%),
+        radial-gradient(circle at 50% 85%, rgba(80, 227, 194, 0.08) 0%, transparent 50%);
+    background-attachment: fixed;
+}
+
+/* Paneles de sección */
+.glass-panel {
+    background: #FFFFFF;
+    border: 1.5px solid var(--border-light-gray);
+    box-shadow: 0 4px 16px -2px rgba(44, 62, 80, 0.06);
+    border-radius: 1rem;
+}
+
+.glass-panel:hover {
+    border-color: #B0BEC5;
+}
+
+/* Tarjeta horizontal amigable y accesible */
+.cosmos-card {
+    background: #FAFAFA;
+    border: 1.5px solid var(--border-light-gray);
+    box-shadow: 0 4px 12px -2px rgba(44, 62, 80, 0.05);
+    transition: all 0.25s ease-in-out;
+}
+
+.cosmos-card:hover {
+    background: #FFFFFF;
+    border-color: var(--brand-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -3px rgba(74, 144, 226, 0.2);
+}
+
+/* Botón CTA Naranja Energético */
+.btn-cta-orange {
+    background-color: var(--brand-orange);
+    color: #FFFFFF;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-cta-orange:hover {
+    background-color: #e85a4c;
+    box-shadow: 0 4px 14px 0 rgba(255, 111, 97, 0.45);
+    transform: scale(1.02);
+}
+
+/* Botones principales Azul Brillante con Hover Verde Fresco */
+.btn-nav-blue {
+    background-color: var(--brand-blue);
+    color: #FFFFFF;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-nav-blue:hover {
+    background-color: var(--brand-green);
+    color: #1A365D;
+    box-shadow: 0 4px 12px 0 rgba(80, 227, 194, 0.45);
+}

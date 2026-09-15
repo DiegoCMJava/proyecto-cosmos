@@ -1,42 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="h-full">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProyectoCosmos</title>
+    <title>Proyecto Cosmos | Portal Educativo</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="min-h-screen bg-violet-50 flex flex-col sm:px-4 md:px-16 xl:px-24 p-2">
-    <header class="flex flex-col justify-center items-center bg-zinc-300/50 p-4">
-        <h1 class="font-mono font-bold text-2xl">Proyecto<span class="font-serif italic text-lg">Cosmos</span></h1>
-        <p class="font-serif italic text-lg">El Universo a un clic de distancia</p>
+<body
+    class="min-h-screen w-full flex flex-col cosmos-bg text-[#2C3E50] antialiased selection:bg-[#F5C518] selection:text-[#2C3E50]">
+
+    <header class="w-full bg-[#4A90E2] text-white px-4 sm:px-8 py-4 sticky top-0 z-50 shadow-md">
+        <div class="w-full flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <div>
+                    <div class="flex items-center gap-2">
+                        <h1 class="text-xl sm:text-2xl font-bold tracking-tight text-white">
+                            Proyecto<span class="text-[#F5C518]">Cosmos</span>
+                        </h1>
+                    </div>
+                    <p class="text-xs sm:text-sm text-black font-medium">
+                        el universo a un clic de distancia
+                    </p>
+                </div>
+            </div>
+        </div>
     </header>
-    <main class="grid grid-flow-col grid-rows-2 gap-4 w-full max-w-7xl  
-               sm:text-base md:text-lg lg:text-xl">
-        <section id="nasa-section" class="m-4 col-span-2">
-            <h2 class="">NASA</h2>
-            <div id="nasa-content" class="flex w-300 overflow-x-auto space-x-6 snap-x snap-mandatory"></div>
-        </section>
-        <section id="esa-section" class="m-4 col-span-2">
-            <h2 class="">ESA</h2>
-            <div id="esa-content" class="flex w-300 overflow-x-auto space-x-6 snap-x snap-mandatory"></div>
-        </section>
-        <section id="mixed-section" class="m-4 col-span-2">
-            <h2 class="">Misceláneo</h2>
-            <div id="mixed-content" class="flex w-300 overflow-x-auto space-x-6 snap-x snap-mandatory"></div>
-        </section>
-        <aside id="amusement" class="m-4 row-span-3">
-            <h2>Entretenimiento</h2>
-            <div id="amusement-content"
-                class="flex flex-col w-90 h-300 overflow-y-auto space-y-6 snap-y snap-mandatory">
+
+    <main class="w-full flex-1 px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6 bg-[#FAFAFA]">
+        <div class="lg:col-span-8 xl:col-span-9 flex flex-col space-y-6">
+
+            <!-- Sección NASA -->
+            <section id="nasa-section" class="glass-panel p-4 sm:p-5">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center gap-3">
+                        <div>
+                            <h2 class="text-lg font-bold text-[#2C3E50] tracking-wide">NASA</h2>
+                            <p class="text-xs text-[#5A6B7C]">Mira lo que nos facilita la NASA</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button onclick="scrollCarousel('nasa-content', 'left')" aria-label="Anterior NASA"
+                            class="p-2 rounded-xl btn-nav-blue shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <button onclick="scrollCarousel('nasa-content', 'right')" aria-label="Siguiente NASA"
+                            class="p-2 rounded-xl btn-nav-blue shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden">
+                    <div id="nasa-content"
+                        class="flex overflow-x-auto scroll-smooth space-x-4 snap-x snap-mandatory max-w-full pb-2 no-scrollbar">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección ESA -->
+            <section id="esa-section" class="glass-panel p-4 sm:p-5">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center gap-3">
+                        <!-- Icono destacado en Amarillo Cálido (para en un futuro poner el icono de la agencia y aplicar a las demás )
+                        <div class="p-2.5 rounded-xl bg-[#F5C518]/25 border border-[#F5C518] text-[#2C3E50]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#4A90E2]" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div> -->
+                        <div>
+                            <h2 class="text-lg font-bold text-[#2C3E50] tracking-wide">Agencia Espacial Europea (ESA)
+                            </h2>
+                            <p class="text-xs text-[#5A6B7C]">Europa también explora</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button onclick="scrollCarousel('esa-content', 'left')" aria-label="Anterior ESA"
+                            class="p-2 rounded-xl btn-nav-blue shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <button onclick="scrollCarousel('esa-content', 'right')" aria-label="Siguiente ESA"
+                            class="p-2 rounded-xl btn-nav-blue shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden">
+                    <div id="esa-content"
+                        class="flex overflow-x-auto scroll-smooth space-x-4 snap-x snap-mandatory max-w-full pb-2 no-scrollbar">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Misceláneo -->
+            <section id="mixed-section" class="glass-panel p-4 sm:p-5">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center gap-3">
+                        <div>
+                            <h2 class="text-lg font-bold text-[#2C3E50] tracking-wide">Misceláneo</h2>
+                            <p class="text-xs text-[#5A6B7C]">Más webs interesantes</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button onclick="scrollCarousel('mixed-content', 'left')" aria-label="Anterior Misceláneo"
+                            class="p-2 rounded-xl btn-nav-blue shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <button onclick="scrollCarousel('mixed-content', 'right')" aria-label="Siguiente Misceláneo"
+                            class="p-2 rounded-xl btn-nav-blue shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden">
+                    <div id="mixed-content"
+                        class="flex overflow-x-auto scroll-smooth space-x-4 snap-x snap-mandatory max-w-full pb-2 no-scrollbar">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Columna Lateral: Entretenimiento -->
+        <aside id="amusement"
+            class="lg:col-span-4 xl:col-span-3 flex flex-col glass-panel p-4 sm:p-5 h-fit max-h-[850px]">
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-3">
+                    <div>
+                        <h2 class="text-lg font-bold text-[#2C3E50] tracking-wide">Entretenimiento</h2>
+                        <p class="text-xs text-[#5A6B7C]">Diviertete un rato</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button onclick="scrollCarousel('amusement-content', 'up')" aria-label="Subir Entretenimiento"
+                        class="p-2 rounded-xl btn-nav-blue shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" />
+                        </svg>
+                    </button>
+                    <button onclick="scrollCarousel('amusement-content', 'down')" aria-label="Bajar Entretenimiento"
+                        class="p-2 rounded-xl btn-nav-blue shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative overflow-hidden flex-1">
+                <div id="amusement-content"
+                    class="flex flex-col space-y-3.5 overflow-y-auto scroll-smooth snap-y snap-mandatory max-h-[680px] pr-1 pb-2 no-scrollbar">
+                </div>
             </div>
         </aside>
+
     </main>
-    <footer class="w-full bg-zinc-300/50 p-4 mt-6 text-center ">
-        © 2026 ProyectoCosmos | Todos los derechos reservados
+
+    <footer class="w-full bg-[#4A90E2] text-white py-5 px-6 mt-auto text-center text-xs shadow-inner">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-2 max-w-7xl mx-auto">
+            <p class="font-medium">© 2026 ProyectoCosmos</p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
