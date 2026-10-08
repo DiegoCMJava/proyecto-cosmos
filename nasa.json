@@ -3,30 +3,35 @@
         "title": "ProyectoInti",
         "description": "Explora las llamaradas solares.",
         "url": "https://diegocmjava.github.io/proyecto-inti/",
-        "imgurl": "https://i.ibb.co/KpCHqmFb/img-proyecto-inti.png"
+        "imgurl": "https://i.ibb.co/KpCHqmFb/img-proyecto-inti.png",
+        "tags": ["Astronomía", "Sistema Solar"]
     },
     {
         "title": "Próximamente",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
         "url": "#",
-        "imgurl": "https://i.ibb.co/CxDkXM7/logo-proximamente.png"
+        "imgurl": "https://i.ibb.co/CxDkXM7/logo-proximamente.png",
+        "tags": []
     },
     {
         "title": "Próximamente",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
         "url": "#",
-        "imgurl": "https://i.ibb.co/CxDkXM7/logo-proximamente.png"
+        "imgurl": "https://i.ibb.co/CxDkXM7/logo-proximamente.png",
+        "tags": []
     },
     {
         "title": "Próximamente",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
         "url": "#",
-        "imgurl": "https://i.ibb.co/CxDkXM7/logo-proximamente.png"
+        "imgurl": "https://i.ibb.co/CxDkXM7/logo-proximamente.png",
+        "tags": []
     },
     {
         "title": "Próximamente",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
         "url": "#",
-        "imgurl": "https://i.ibb.co/CxDkXM7/logo-proximamente.png"
+        "imgurl": "https://i.ibb.co/CxDkXM7/logo-proximamente.png",
+        "tags": []
     }
 ]
