@@ -7,11 +7,11 @@
         "tags": []
     },
     {
-        "title": "Próximamente",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-        "url": "#",
-        "imgurl": "https://i.ibb.co/CxDkXM7/logo-proximamente.png",
-        "tags": []
+        "title": "Los Rostros de Velázquez",
+        "description": "Un juego interactivo para ejercitar la memoria visual a través de los célebres retratos del maestro del Barroco, Diego Velázquez.",
+        "url": "https://rostros-velazquez.vercel.app/",
+        "imgurl": "https://i.ibb.co/Q7wCbcVL/Diego-Vel-zquez.jpg",
+        "tags": ["Arte", "Destreza mental"]
     },
     {
         "title": "Próximamente",
