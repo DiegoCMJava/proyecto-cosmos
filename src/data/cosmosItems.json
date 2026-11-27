@@ -1,0 +1,114 @@
+[
+  {
+    "id": "proyecto-inti",
+    "title": "ProyectoInti",
+    "description": "Explora las llamaradas solares.",
+    "url": "https://proyecto-inti-snowy.vercel.app/",
+    "imgurl": "https://i.ibb.co/KpCHqmFb/img-proyecto-inti.png",
+    "category": "tool",
+    "tags": ["Astronomía", "Sistema Solar"],
+    "metadata": {
+      "agency": "Proyecto Cosmos",
+      "topic": "Actividad solar y llamaradas",
+      "accessType": "Gratuito",
+      "status": "Activo",
+      "platform": "Web"
+    }
+  },
+  {
+    "id": "stardude",
+    "title": "Stardude",
+    "description": "Juego simple usando la librería PhaserJS.",
+    "url": "https://diegocmjava.github.io/stardude/",
+    "imgurl": "https://i.ibb.co/VGw0wPr/Phaser-by-Example.jpg",
+    "category": "game",
+    "tags": ["Astronomía", "Juegos"],
+    "metadata": {
+      "agency": "Proyecto Cosmos",
+      "topic": "Arcade espacial 2D",
+      "accessType": "Gratuito",
+      "status": "Activo",
+      "platform": "PhaserJS"
+    }
+  },
+  {
+    "id": "los-rostros-de-velazquez",
+    "title": "Los Rostros de Velázquez",
+    "description": "Un juego interactivo para ejercitar la memoria visual a través de los célebres retratos del maestro del Barroco, Diego Velázquez.",
+    "url": "https://rostros-velazquez.vercel.app/",
+    "imgurl": "https://i.ibb.co/Q7wCbcVL/Diego-Vel-zquez.jpg",
+    "category": "game",
+    "tags": ["Arte", "Destreza mental"],
+    "metadata": {
+      "agency": "Proyecto Cosmos",
+      "topic": "Memoria visual y Barroco",
+      "accessType": "Gratuito",
+      "status": "Activo",
+      "platform": "Web"
+    }
+  },
+  {
+    "id": "upcoming-bio-01",
+    "title": "Próximamente",
+    "description": "Explorador interactivo de vida en entornos extremos y astrobiología.",
+    "url": "#",
+    "imgurl": "https://i.ibb.co/CxDkXM7/logo-proximamente.png",
+    "category": "tool",
+    "tags": ["Biología", "Astronomía"],
+    "metadata": {
+      "agency": "Proyecto Cosmos",
+      "topic": "Astrobiología",
+      "accessType": "Gratuito",
+      "status": "Próximamente",
+      "platform": "Web"
+    }
+  },
+  {
+    "id": "upcoming-game-01",
+    "title": "Próximamente",
+    "description": "Nuevo recurso interactivo en preparación para el portal.",
+    "url": "#",
+    "imgurl": "https://i.ibb.co/CxDkXM7/logo-proximamente.png",
+    "category": "game",
+    "tags": [],
+    "metadata": {
+      "agency": "Proyecto Cosmos",
+      "topic": "Por definir",
+      "accessType": "Gratuito",
+      "status": "Próximamente",
+      "platform": "Web"
+    }
+  },
+  {
+    "id": "upcoming-game-03",
+    "title": "Próximamente",
+    "description": "Nuevo recurso interactivo en preparación para el portal.",
+    "url": "#",
+    "imgurl": "https://i.ibb.co/CxDkXM7/logo-proximamente.png",
+    "category": "game",
+    "tags": [],
+    "metadata": {
+      "agency": "Proyecto Cosmos",
+      "topic": "Por definir",
+      "accessType": "Gratuito",
+      "status": "Próximamente",
+      "platform": "Web"
+    }
+  },
+  {
+    "id": "upcoming-game-04",
+    "title": "Próximamente",
+    "description": "Nuevo recurso interactivo en preparación para el portal.",
+    "url": "#",
+    "imgurl": "https://i.ibb.co/CxDkXM7/logo-proximamente.png",
+    "category": "game",
+    "tags": [],
+    "metadata": {
+      "agency": "Proyecto Cosmos",
+      "topic": "Por definir",
+      "accessType": "Gratuito",
+      "status": "Próximamente",
+      "platform": "Web"
+    }
+  }
+]
