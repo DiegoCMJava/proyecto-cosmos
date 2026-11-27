@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@layer base {
+  body {
+    background-color: #FAFAFA;
+    color: #2C3E50;
+  }
+}
+.cosmos-bg {
+  background-image: 
+  radial-gradient(circle at 12% 14%, rgba(74, 144, 226, 0.14), transparent 38%),
+    radial-gradient(circle at 88% 18%, rgba(245, 197, 24, 0.16), transparent 36%),
+    radial-gradient(circle at 50% 90%, rgba(80, 227, 194, 0.12), transparent 42%);
+}
